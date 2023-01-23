@@ -6,23 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blackwell's Top Hats</title>
   <style>
-    body {
+    body{
+      background-color: #2D3A3A;
+    }
+
+    .hatImage {
+      width: 60px;
+      margin: 0 0;
+    }
+
+    .headerBar {
       background-color: #2D3A3A;
       font-family: monospace;
       color:aliceblue;
+      border: 5px solid #526363;
     }
     h1 {
       color:aliceblue;
       text-align:center;
+      background-color: #425252;
+      padding: 20px;
+      margin: 0 auto;
+      font-size: 30px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Blackwell Top Hats</h1>
-  </header>
   <main>
-    <h2 style="text-align: center;">The country's finest top hat production company.</h2>
+  <img class="hatImage" src="hat.png"/>
+  <div class="headerBar">
+  <header>
+    <h1>Blackwell's Headwear</h1>
+  </header>
+    <h2 style="text-align: center;">The country's finest headware production company.</h2>
+    <p style="color:aliceblue; font-family: monospace; font-size: 20px; text-align: center;">We at Blackwell's offer a variety of the finest quality headware, from top hats to baker caps.</p>
+
+    <ul style="text-align: left; color:aliceblue; text-decoration: none; font-family: monospace; font-size: 18px;">
+      <li>Headwear</li>
+      <li>Accessories</li>
+      <li>Materials</li>
+    </ul>
+    </div>
   </main>
   <script>
     let userName = prompt("What is your name?")
@@ -37,7 +61,7 @@
     let material = prompt("State your preferred hat material.");
     console.log("Your hat material is " + material);
 
-    alert("Good day, " + userName + " your hat type will be " + hatType + ". Your hat colour will be " + colour + ". Your hat material will be " + material + ". Enjoy your product!");
+    alert("Good day, " + userName + ". We will make you a " + colour + ", " + material + ", " + hatType + ". " + "Thank you for your order!");
   </script>
 </body>
 </html>
